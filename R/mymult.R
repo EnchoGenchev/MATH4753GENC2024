@@ -1,4 +1,7 @@
 #' plot samples from multinomial distribution
+#' @importFrom graphics barplot
+#' @importFrom grDevices rainbow
+#' @importFrom stats fitted residuals
 #'
 #' @param iter is the number of times a sample is drawn
 #' @param n is the size of the sample to be drawn
@@ -9,11 +12,11 @@
 mymult=function(iter=100,n=10, p=c(1,1,1,1)/4){
   # make a matrix to hold the samples
   #initially filled with NA's
-  sam.mat=matrix(NA,nr=n,nc=iter, byrow=TRUE)
+  sam.mat=matrix(NA,nrow=n,ncol=iter, byrow=TRUE)
   #The number of categories is k
   k=length(p)
   # Make a matrix that will hold the frequencies in each sample
-  tab.mat=matrix(NA,nr=k,nc=iter, byrow=TRUE)
+  tab.mat=matrix(NA,nrow=k,ncol=iter, byrow=TRUE)
 
 
   for(i in 1:iter){
