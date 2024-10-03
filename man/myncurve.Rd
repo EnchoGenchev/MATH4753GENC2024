@@ -4,14 +4,14 @@
 \alias{myncurve}
 \title{displays area under curve}
 \usage{
-myncurve(a, mu, sigma)
+myncurve(mu, sigma, a)
 }
 \arguments{
-\item{a}{value at which probability less than will be calculated}
-
 \item{mu}{mean of the normal distribution}
 
 \item{sigma}{standard deviation of normal distribution}
+
+\item{a}{value at which probability less than will be calculated}
 }
 \value{
 shaded area, mean, standard deviation, and P(X < a)

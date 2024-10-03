@@ -1,5 +1,5 @@
 test_that("myncurve works", {
-  result <- myncurve(a = 1, mu = 0, sigma = 1)
+  result <- myncurve(mu = 0, sigma = 1, a = 1)
 
   expect_type(result, "list")
 
