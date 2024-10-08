@@ -3,6 +3,7 @@
 export(mymult)
 export(myncurve)
 export(mysquare)
+export(ntickets)
 export(resvfit)
 importFrom(grDevices,rainbow)
 importFrom(graphics,barplot)
