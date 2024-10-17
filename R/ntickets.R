@@ -1,5 +1,9 @@
 #' finds optimal number of plane tickets to sell
 #'
+#' @importFrom graphics abline
+#' @importFrom graphics points
+#' @importFrom stats pbinom
+#'
 #' @param N number of available seats
 #' @param gamma probability of overbooking
 #' @param p probability of passenger showing up
@@ -29,7 +33,7 @@ ntickets <- function(N, gamma, p) {
   #find nd
   for (n in n_vals) {
     if (1 - gamma - pbinom(N, round(n), p) <= 0) {
-      nd <- n
+      nd <- round(n)
     }
   }
 
