@@ -16,7 +16,7 @@ myclt(n, iter, a = 0, b = 5)
 \item{b}{upper bound of the uniform distribution}
 }
 \value{
-vector containing the sum of the `n` uniform random variables for each iteration and a histogram
+histogram containing the sum of the `n` uniform random variables for each iteration
 }
 \description{
 myclt: Central Limit Theorem Simulation for Uniform Distribution
