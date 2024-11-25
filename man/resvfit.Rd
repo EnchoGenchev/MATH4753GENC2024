@@ -15,3 +15,8 @@ plots residuals vs fitted values
 \description{
 plot residuals vs fitted values
 }
+\examples{
+model <- lm(mpg ~ wt + hp, data = mtcars)
+resvfit(model)
+
+}

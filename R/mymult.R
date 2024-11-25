@@ -8,6 +8,9 @@
 #' @param p is a vector representing the probability of each catagory
 #' @return plots residuals vs fitted values
 #'
+#' @examples
+#' mymult(iter = 200, n = 15, p = c(0.5, 0.3, 0.2))
+#'
 #' @export
 mymult=function(iter=100,n=10, p=c(1,1,1,1)/4){
   # make a matrix to hold the samples

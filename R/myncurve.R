@@ -12,6 +12,10 @@
 #'
 #' @return shaded area, mean, standard deviation, and P(X < a)
 #'
+#' @examples
+#' # Plotting and calculating probability for N(0, 1) where a = 1.5
+#' myncurve(mu = 0, sigma = 1, a = 1.5)
+#'
 #' @export
 myncurve = function(mu, sigma, a){
   curve(dnorm(x,mean=mu,sd=sigma), xlim = c(mu-3*sigma, mu + 3*sigma))

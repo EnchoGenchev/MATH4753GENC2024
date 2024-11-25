@@ -19,3 +19,7 @@ plots residuals vs fitted values
 \description{
 plot samples from multinomial distribution
 }
+\examples{
+mymult(iter = 200, n = 15, p = c(0.5, 0.3, 0.2))
+
+}

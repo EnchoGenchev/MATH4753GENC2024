@@ -19,3 +19,10 @@ list including nd, nc, N, p, and gamma
 \description{
 finds optimal number of plane tickets to sell
 }
+\examples{
+# Example: Find the optimal number of tickets to sell
+# with 100 seats, a 5\% overbooking tolerance, and 90\% show-up probability.
+result <- ntickets(N = 100, gamma = 0.05, p = 0.9)
+print(result)
+
+}

@@ -10,6 +10,12 @@
 #'
 #' @return list including nd, nc, N, p, and gamma
 #'
+#' @examples
+#' # Example: Find the optimal number of tickets to sell
+#' # with 100 seats, a 5% overbooking tolerance, and 90% show-up probability.
+#' result <- ntickets(N = 100, gamma = 0.05, p = 0.9)
+#' print(result)
+#'
 #' @export
 ntickets <- function(N, gamma, p) {
 
